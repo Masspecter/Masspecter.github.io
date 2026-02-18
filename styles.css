@@ -188,3 +188,12 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+.contact-info a {
+    color: #8b5e3c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
