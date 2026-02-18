@@ -66,6 +66,7 @@ nav a:hover {
 
 .portfolio {
     padding: 60px 10%;
+    background: #f5f3ef;
 }
 
 .portfolio h2 {
@@ -137,21 +138,18 @@ footer {
     margin-top: 30px;
 }
 
-.category-btn .category-btn {
-    padding: 18px 28px;
-    background: #8b5e3c;
+.category-btn {
+    padding: 16px 26px;
+    background: #8b5e3c; /* strong wood tone */
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    transition: all 0.3s ease;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
 }
 
 .category-btn:hover {
-    background: #6e472c;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: #5f3e28; /* darker on hover */
 }
 
 /* Gallery page layout */
