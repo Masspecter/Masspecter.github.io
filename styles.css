@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f7f6f3;
@@ -11,20 +15,26 @@ body {
     line-height: 1.6;
 }
 
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px 8%;
     background: white;
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .logo {
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.logo span {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #777;
 }
 
 nav a {
@@ -37,10 +47,12 @@ nav a:hover {
     color: #8b5e3c;
 }
 
+/* HERO */
+
 .hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('https://wallpapercave.com/wp/wp12202446.jpg');
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://images.unsplash.com/photo-1505691938895-1758d7feb511');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -48,24 +60,39 @@ nav a:hover {
     align-items: center;
     text-align: center;
     color: white;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* BUTTON STYLE (used everywhere) */
 
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 25px;
+    padding: 14px 28px;
     background: #8b5e3c;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.25s ease;
 }
 
+.btn:hover {
+    background: #6e472c;
+}
+
+/* PORTFOLIO */
+
 .portfolio {
-    padding: 60px 10%;
+    padding: 60px 8%;
     background: #f5f3ef;
 }
 
@@ -73,145 +100,57 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-.category {
-    margin-bottom: 40px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.about, .contact {
-    padding: 60px 10%;
-    background: white;
-}
-
-.contact form {
+.category-buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 30px;
 }
 
-.contact input,
-.contact textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* ABOUT + CONTACT */
+
+.about,
+.contact {
+    padding: 60px 8%;
+    background: white;
 }
 
-.contact button {
-    padding: 10px;
-    background: #8b5e3c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.contact-info {
+    margin-top: 20px;
 }
+
+.contact-info a {
+    color: #8b5e3c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
 
 footer {
     text-align: center;
     padding: 20px;
     background: #222;
     color: white;
+    font-size: 0.9rem;
 }
 
-.category-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 30px;
-}
+/* MOBILE OPTIMIZATION */
 
-.category-btn {
-    padding: 16px 26px;
-    background: #8b5e3c; /* strong wood tone */
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.25s ease;
-}
+@media (min-width: 768px) {
 
-.category-btn:hover {
-    background: #5f3e28; /* darker on hover */
-}
+    .hero h1 {
+        font-size: 3rem;
+    }
 
-/* Gallery page layout */
+    .category-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-.gallery-page {
-    padding: 60px 10%;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.image-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.contact-info a {
-    color: #8b5e3c;
-    text-decoration: none;
-}
-
-.contact {
-    padding: 60px 10%;
-    background: #ffffff;
-}
-
-.contact-info {
-    margin-top: 20px;
-    font-size: 1.05rem;
-    line-height: 1.8;
-}
-
-.contact-info a {
-    color: #8b5e3c;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
+    .category-buttons .btn {
+        flex: 1 1 45%;
+    }
 }
