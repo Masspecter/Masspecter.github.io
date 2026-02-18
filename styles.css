@@ -194,6 +194,26 @@ html {
     text-decoration: none;
 }
 
+.contact {
+    padding: 60px 10%;
+    background: #ffffff;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #8b5e3c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 .contact-info a:hover {
     text-decoration: underline;
 }
