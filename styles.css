@@ -139,11 +139,11 @@ footer {
 
 /* MOBILE OPTIMIZATION */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
     .hero h1 {
         font-size: 3rem;
-    }
+    } */
 
 .category-buttons {
     display: flex;
