@@ -145,12 +145,16 @@ footer {
         font-size: 3rem;
     }
 
-    .category-buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.category-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 25px;
+}
 
-    .category-buttons .btn {
-        flex: 1 1 45%;
-    }
+.category-buttons .btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+}
 }
