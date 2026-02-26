@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="category-page">
+    <a href="index.html#portfolio" class="back-btn">← Back to Portfolio</a>
+    <h1>Kitchen</h1>
+
+    <div class="gallery">
+
+<img src="Images/Custom (117).webp">
+<img src="Images/Custom (118).webp">
+<img src="Images/Custom (119).webp">
+<img src="Images/Custom (116).webp">
+<img src="Images/Custom (112).webp">
+<img src="Images/Custom (129).webp">
+<img src="Images/Custom (130).webp">
+<img src="Images/Custom (139).webp">
+<img src="Images/Custom (155).webp">
+<img src="Images/Custom (160).webp">
+<img src="Images/Custom (161).webp">
+<img src="Images/Custom (162).webp">
+<img src="Images/Custom (163).webp">
+<img src="Images/Custom (171).webp">
+<img src="Images/Custom (172).webp">
+<img src="Images/Custom (173).webp">
+<img src="Images/Custom (174).webp">
+<img src="Images/Custom (182).webp">
+<img src="Images/Custom (185).webp">
+<img src="Images/Custom (186).webp">
+<img src="Images/Custom (187).webp">
+<img src="Images/Custom (202).webp">
+<img src="Images/Custom (207).webp">
+<img src="Images/Custom (237).webp">
+<img src="Images/Custom (238).webp">
+<img src="Images/Custom (239).webp">
+<img src="Images/Custom (240).webp">
+<img src="Images/Custom (241).webp">
+<img src="Images/Custom (265).webp">
+<img src="Images/Custom (266).webp">
+<img src="Images/Custom (267).webp">
+<img src="Images/Custom (268).webp">
+<img src="Images/Custom (278).webp">
+<img src="Images/Custom (279).webp">
+<img src="Images/Custom (286).webp">
+<img src="Images/Custom (390).webp">
+<img src="Images/Custom (391).webp">
+<img src="Images/Custom (392).webp">
+<img src="Images/Custom (345).webp">
+<img src="Images/Custom (346).webp">
+<img src="Images/Custom (347).webp">
+    </div>
+</section>
+
+</body>
+</html>
