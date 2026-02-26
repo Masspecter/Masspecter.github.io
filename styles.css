@@ -42,7 +42,7 @@ nav a {
 .hero {
     position: relative;
     height: 70vh;
-    background-image: url("Masspecter.github.io/Images/WoodGrain.png"); /* CHANGE to your actual image path */
+    background-image: url("Images/WoodGrain.png"); /* CHANGE to your actual image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
