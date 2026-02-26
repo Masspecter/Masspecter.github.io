@@ -2,58 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kitchen | Pol Furniture</title>
+    <title>Kitchen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="category-header">
-    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+<section class="category-page">
+    <a href="index.html#portfolio" class="back-btn">← Back to Portfolio</a>
     <h1>Kitchen</h1>
-</header>
 
-<section class="gallery">
-    <div class="gallery-grid">
+    <div class="gallery">
 
-        <img src="images/kitchen/1.jpg" alt="">
-        <img src="images/kitchen/2.jpg" alt="">
-        <img src="images/kitchen/3.jpg" alt="">
-        <img src="images/kitchen/4.jpg" alt="">
-        <img src="images/kitchen/5.jpg" alt="">
-        <img src="images/kitchen/6.jpg" alt="">
+<img src="Images/Custom (8).webp">
+<img src="Images/Custom (9).webp">
+<img src="Images/Custom (19).webp">
+<img src="Images/Custom (27).webp">
+<img src="Images/Custom (104).webp">
+<img src="Images/Custom (105).webp">
+<img src="Images/Custom (106).webp">
+<img src="Images/Custom (107).webp">
+<img src="Images/Custom (175).webp">
+<img src="Images/Custom (176).webp">
+<img src="Images/Custom (179).webp">
+<img src="Images/Custom (183).webp">
+<img src="Images/Custom (184).webp">
+<img src="Images/Custom (195).webp">
+<img src="Images/Custom (196).webp">
+<img src="Images/Custom (197).webp">
+<img src="Images/Custom (201).webp">
+<img src="Images/Custom (203).webp">
+<img src="Images/Custom (208).webp">
+<img src="Images/Custom (209).webp">
+<img src="Images/Custom (215).webp">
+<img src="Images/Custom (217).webp">
+<img src="Images/Custom (229).webp">
+<img src="Images/Custom (230).webp">
+<img src="Images/Custom (334).webp">
+<img src="Images/Custom (335).webp">
+<img src="Images/Custom (360).webp">
+<img src="Images/Custom (336).webp">
+<img src="Images/Custom (338).webp">
+<img src="Images/Custom (339).webp">
+<img src="Images/Custom (340).webp">
+<img src="Images/Custom (341).webp">
+<img src="Images/Custom (402).webp">
 
     </div>
 </section>
-
-<div class="lightbox" id="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" id="lightbox-img">
-</div>
-
-<script>
-const images = document.querySelectorAll('.gallery-grid img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const closeBtn = document.querySelector('.close');
-
-images.forEach(img => {
-    img.addEventListener('click', () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-    });
-});
-
-closeBtn.addEventListener('click', () => {
-    lightbox.style.display = "none";
-});
-
-lightbox.addEventListener('click', (e) => {
-    if (e.target !== lightboxImg) {
-        lightbox.style.display = "none";
-    }
-});
-</script>
 
 </body>
 </html>
