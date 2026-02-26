@@ -40,15 +40,34 @@ nav a {
 
 /* HERO SECTION */
 .hero {
-    padding: 60px 8%;
-    text-align: center;
-    background: #ffffff;
+    position: relative;
+    height: 70vh;
+    background-image: url("images/hero.webp"); /* CHANGE to your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero h2 {
-    font-size: 28px;
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35); /* subtle dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 32px;
     margin-bottom: 20px;
-    color: #3D1704;
 }
 
 /* GENERAL BUTTON */
